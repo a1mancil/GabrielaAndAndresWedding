@@ -74,7 +74,7 @@
     <section class="navigation">
         <header>
             <div class="header-content">
-                <div class="logo"><a href="#"><img src="img/logo.png" alt=""></a></div>
+                <!-- <div class="logo"><a href="#"><img src="img/logo.png" alt=""></a></div> -->
                 <div class="header-nav">
                     <nav>
                         <ul class="primary-nav">
@@ -257,8 +257,8 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
                     </button>
                     <div class="section-padding">
-                        <h3>Thank you!</h3>
-                        <p>We are glad to see you join us on our big day.</p>
+                        <h3>Thank you! | ¡Gracias!</h3>
+                        <p>See you soon | Nos vemos pronto </p>
                         <div id="add-to-cal"></div>
                     </div>
                 </div>
@@ -269,24 +269,37 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
-                <h3>What are you waiting for?</h3>
-                <p>We would greatly appreciate if you could RSVP before 1st of September '23</p>
+                <h3>What are you waiting for? | ¿Que estas esperando?</h3>
+                <p>We would greatly appreciate if you could RSVP before 1st of September 2023. 
+                   <b>Please specify
+                    amount of people in your group or family including yourself in the "Total" box below.</b> </p>
+                <p>Le agradeceríamos mucho si pudieran confirmar su asistencia antes de 1 September 2023. 
+                   <b>Especifique la cantidad de personas en su grupo o familia, incluido usted mismo 
+                    en el cuadro "Total" a continuación.</b> 
+                </p>
                 <form id="rsvp-form" class="rsvp-form"
-                      action=""
-                      method="POST">
+                      action="https://script.google.com/macros/s/AKfycbzUCazp6zcuX-tEvCmOsBrEp7Wf1x4CTzeWMI23mJOJkBKe7WJdggcBwMBOLdnVvfFLkw/exec"
+                      method="POST" >
                     <div class="row">
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
                                 <i class="fa fa-envelope"></i><input type="email" name="email" class=""
-                                                                     placeholder="Your email"
+                                                                     placeholder="Email | Correo Electrónico"
                                                                      required>
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
                                 <i class="fa fa-user"></i><input name="name" class=""
-                                                                 placeholder="Your name"
+                                                                 placeholder="Name | Nombre"
                                                                  required>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12">
+                            <div class="form-input-group">
+                                <i class="fa fa-cutlery"></i><input name="diet_restrictions" class=""
+                                                                 placeholder="Dietary Restrictions | Restricciones de dieta"
+                                                                 >
                             </div>
                         </div>
                     </div>
@@ -294,8 +307,8 @@
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
                                 <i class="fa fa-users"></i><input type="number" name="extras" class="" min="0"
-                                                                  max="4"
-                                                                  placeholder="Husband/Wife or kids"
+                                                                  max="10"
+                                                                  placeholder="Total"
                                                                   required>
                             </div>
                         </div>
@@ -303,7 +316,7 @@
                             <div class="form-input-group">
                                 <i class="fa fa-key"></i><input type="number" name="invite_code" id="invite_code"
                                                                 class="" min="0"
-                                                                placeholder="Invite code"
+                                                                placeholder="Code | Codigo"
                                                                 required>
                             </div>
                         </div>
@@ -312,8 +325,7 @@
                         <div class="col-md-12" id="alert-wrapper"></div>
                     </div>
                     <button class="btn-fill rsvp-btn">
-                        Yes,
-                        that's me!
+                        Reserve | Reservar
                     </button>
                 </form>
             </div>
