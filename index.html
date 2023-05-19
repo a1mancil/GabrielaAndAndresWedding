@@ -63,6 +63,8 @@
     
     
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js" defer></script>
+    <script src="js/vueApp.js" defer></script>
 </head>
 <body id="top">
 <!--[if lt IE 8]>
@@ -117,7 +119,7 @@
         <div class="row">
             <div class="col-md-12 text-center">
                 <h3>We are getting yoked!</h3>
-                <p>We invite you all. Los invitamos.  Oct 28th 2023. </p>
+                <p id="countDownVueApp">We invite you all. Los invitamos.  Oct 28th 2023 - {{countDownMessage}} </p>
             </div>
         </div>
         <div class="row">
@@ -401,9 +403,8 @@
 <script src="js/jquery.mb.YTPlayer.min.js"></script>
 <script src="js/vendor/ouical.js"></script>
 <script src="js/scripts.min.js"></script>
-<script async defer
+<!-- <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlPw3GQYI3faa_9mRE6plWuM7xNEmrwH0&callback=initMap"></script>
-<!-- Google Analytics -->
 <script>
     (function (i, s, o, g, r, a, m) {
         i['GoogleAnalyticsObject'] = r;
@@ -418,6 +419,7 @@
     })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
     ga('create', 'UA-46465113-4', 'auto');
     ga('send', 'pageview');
-</script>
+</script> -->
+
 </body>
 </html>
