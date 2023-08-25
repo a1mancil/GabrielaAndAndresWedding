@@ -388,7 +388,10 @@ header .member-actions {
     top: 75%;
     z-index: -1;
 }
-
+#engPicsID{
+    display: flex; 
+    justify-content: center;
+}
 .pointer-events-none {
     pointer-events: none;
 }
