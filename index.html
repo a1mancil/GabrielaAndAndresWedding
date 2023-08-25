@@ -17,23 +17,6 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="manifest" href="manifest.json">
 
-    <script>
-        // load css files from CDN if local node_modules fail
-        function loadCssFromCDN(css) {
-            // create new link tag
-            const link = document.createElement('link');
-            if (css === 'animate.css') {
-                link.href = 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css';
-            } else if (css === 'font-awesome.css') {
-                link.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css';
-            }
-            link.rel = 'stylesheet';
-
-            // add link tag to head section
-            document.getElementsByTagName('head')[0].appendChild(link);
-        }
-    </script>
-
     <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/jquery.fancybox.css">
@@ -42,20 +25,14 @@
     <link rel="stylesheet" href="css/queries.css">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" >
-    
-    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-    
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    
     <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js" defer></script>
     <script src="js/vueApp.js" defer></script>
 </head>
 <body id="top">
-<!--[if lt IE 8]>
-<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
-    your browser</a> to improve your experience.</p>
-<![endif]-->
+
 <section class="hero">
     <section class="navigation">
         <header>
@@ -185,8 +162,7 @@
         <div class="row">
             <div class="col-md-6">
                 <p style="
-                padding-bottom: 0px;
-            ">
+                padding-bottom: 0px; ">
                     Mass will be held at <b> Our Lady of Mount Carmel</b> at <b>1:00 pm</b>. <b>Please arrive on time</b>.
                     <br> <br>
                     La misa se llevará a cabo en la<b> Iglesia de Nuestra Señora del Monte Carmelo</b> a la <b>1:00 pm</b>. <b>Por favor llegue a tiempo</b>. 
@@ -200,7 +176,6 @@
         </div>
     </div>
 </section>
-
 
 <section id="reception">
     <div class="container">
@@ -224,8 +199,6 @@
         </div>
     </div>
 </section>
-
-
 
 <section id="hotels" class="section-padding">
     <div class="container">
@@ -274,7 +247,6 @@
 </section>
 
 <br>
-
 
 <section class="rsvp text-center" id="rsvp">
 
@@ -388,6 +360,6 @@
 <script src="js/jquery.flexslider-min.js"></script>
 <script src="js/jquery.mb.YTPlayer.min.js"></script>
 <script src="js/vendor/ouical.js"></script>
-<script src="js/scripts.min.js"></script>
+<script src="js/scripts.js"></script>
 </body>
 </html>
